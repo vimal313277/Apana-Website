@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Password-Checker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+            overflow-y: hidden;
+        }
+
+        body {
+            background-color: #bc8253;
+        }
+
+        .input-box {
+            background: #fff;
+            width: 90%;
+            max-width: 400px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 300px auto;
+            display: flex;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+        }
+
+        .input-box img {
+            width: 60px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px 0;
+            border: 0;
+            outline: 0;
+            font-size: 24px;
+            color: #555;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="input-box">
+        <form action="" id="myform">
+            <input type="password" placeholder="Password" id="password">
+            <img src="eye1.png" id="eye">
+        </form>
+    </div>
+
+    <script>
+
+        let eye = document.getElementById("eye")
+        let password = document.getElementById("password")
+
+        eye.onclick = function () {
+
+
+            if (password.type == "password") {
+                password.type = "text";
+                eye.src = "eye2.png";
+            }
+            else {
+                password.type = "password";
+                eye.src = "eye1.png";
+
+            }
+        }
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+</body>
+
+</html>

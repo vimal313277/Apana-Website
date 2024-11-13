@@ -1,0 +1,173 @@
+/* <!-- ============================ Car Dealership navbar With responsive start============================== --> */
+
+@media screen and (min-width: 1241px) and (max-width: 1500px) {
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1240px) {
+  .mnnvbr-ul {
+    align-items: center;
+    gap: 8px;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    font-size: 26px !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .mnnvbr-ul {
+    align-items: center;
+    gap: 8px;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    font-size: 26px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .mnnvbr-ul {
+    align-items: center;
+    gap: 8px;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .mainnvbr {
+    padding: 0% !important;
+    background: #000000c7 !important;
+  }
+
+  .about-conte {
+    top: 40%;
+  }
+
+  .nav-item {
+    width: 30%;
+    text-align: center;
+  }
+
+  .book-btn {
+    width: 215px;
+  }
+
+  /* <!-- =================================== cards new style start ============================================== --> */
+  .creative-cards .container .row .card-column {
+    flex: 0 0 auto;
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  /* <!-- =================================== cards new style End ============================================== --> */
+}
+@media (max-width: 767px) {
+  .nav-link {
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 11px;
+    text-align: center;
+  }
+  .mnnvbr-ul {
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-item {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .nav-link {
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 11px;
+    text-align: center;
+  }
+  .mnnvbr-ul {
+    align-items: center;
+    gap: 8px;
+  }
+  .mainnvbr {
+    padding: 0% !important;
+    background: #000000c7 !important;
+  }
+
+  /* <!-- ======================================== Responsive Tab panel section Start ================================= --> */
+
+  .meet-our-team .nav-tabs {
+    flex-direction: column;
+  }
+
+  .meet-out-team-two .nav.nav-tabs .nav-item.active {
+    display: block;
+  }
+
+  .meet-out-team-two .nav-tabs .nav-link {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .meet-out-team-two .nav.nav-tabs .nav-item {
+    display: none;
+  }
+
+  .meet-out-team-two .nav.nav-tabs.expanded .nav-item {
+    display: block;
+  }
+
+  /* <!-- ======================================== Responsive Tab panel section Start ================================= --> */
+}
+
+@media screen and (max-width: 480px) {
+  .nav-link {
+    text-transform: uppercase;
+    color: white !important;
+    font-size: 11px;
+    text-align: center;
+  }
+  .mnnvbr-ul {
+    align-items: center;
+    gap: 8px;
+  }
+  .mainnvbr {
+    padding: 0% !important;
+    background: #000000c7 !important;
+  }
+  /* <!-- =================================== cards new style start ============================================== --> */
+  .creative-cards .container .row .card-column {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .card-details {
+    width: 100%;
+  }
+  .read-more-btn {
+    transform: translateX(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* <!-- =================================== cards new style End ============================================== --> */
+}
+
+/* <!-- ============================ Car Dealership navbar With responsive End============================== --> */

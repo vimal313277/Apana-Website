@@ -1,0 +1,2949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/searchboxstyle.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+</head>
+
+<body onload="MainFunction()">
+
+    <!-- ========================================= loader start ============================ -->
+
+    <!-- onload="MainFunction()"  call body tag -->
+    <div id="preloader"></div>
+
+    <!-- ========================================== loader End ============================== -->
+
+    <!-- ===================================== I Am Website calendar page start =============================== -->
+
+    <div class="deshboard-main">
+
+        <div class="container calendar">
+
+            <section id="frame">
+                <div id="calendar">
+                    <header>
+                        <pre class="arrow left"><i class="fa-solid fa-angle-left"></i></pre>
+                        <div class="header-display">
+                            <p id="display"></p>
+                        </div>
+                        <pre class=" arrow right"><i class="fa-solid fa-angle-right"></i></pre>
+                    </header>
+
+                    <div class="week">
+                        <div>Sunday</div>
+                        <div>Monday</div>
+                        <div>Tuesday</div>
+                        <div>Wednesday</div>
+                        <div>Thursday</div>
+                        <div>Friday</div>
+                        <div>Saturday</div>
+                    </div>
+
+                    <div id="days" data-bs-toggle="modal" data-bs-target="#eventModal"></div>
+
+                </div>
+            </section>
+
+            <!-- ==== Modal start ==== -->
+
+            <div class="modal fade" id="eventModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h2 id="display"></h2>
+                            <textarea class="area" id="eventDescription"></textarea>
+                            <button id="saveEventBtn">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==== Modal End ==== -->
+
+        </div>
+
+    </div>
+
+    <!-- ===================================== I Am Website calendar page start =============================== -->
+
+
+    <!-- ===================================== Solution Website SideBar Start ========================================== -->
+
+    <div class="sidebar-main">
+        <!-- === 1 === -->
+        <div class="sidebar-small">
+            <div class="top-list">
+                <div class="menu-open-btn">
+                    <a href="javascript:;"> <img src="./images/solutionWebsite/bars-outline.svg" />
+                    </a>
+                </div>
+                <div class="tool-tip">
+                    <img src="./images/solutionWebsite/icon_dash.png" class="icon-dash">
+                    <div class="tip-hover">
+                        Dashboard
+                    </div>
+                </div>
+                <div class="tool-tip">
+                    <img src="./images/solutionWebsite/shopping-clr.png">
+                </div>
+                <div class="tool-tip">
+                    <img src="./images/solutionWebsite/shopping-cart-clr.png" class="icon-dash">
+                    <div class="tip-hover tip-hover-two">
+                        Shopping cart
+                    </div>
+                </div>
+                <div class="tool-tip">
+                    <img src="./images/solutionWebsite/report-chart-clr.png" class="icon-dash">
+                </div>
+            </div>
+        </div>
+        <!-- === 2 === -->
+        <div class="sidebar-small">
+            <div class="top-list top-list-two">
+                <div class="tool-tip">
+                    <img src="./images/icon-account.png" class="icon-dash">
+                </div>
+                <div class="tool-tip">
+                    <img src="./images/icon-faq-square.svg" class="icon-dash">
+
+                    <div class="tip-hover tip-hover-three">
+                        FAQs
+                    </div>
+                </div>
+                <div class="tool-tip">
+                    <img src="./images/icon-tools-tip.svg" class="icon-dash">
+                    <div class="tip-hover tip-hover-four">
+                        Support
+                    </div>
+                </div>
+                <div class="tool-tip">
+                    <img src="./images/icon-info-tip.svg" class="icon-dash">
+
+                    <div class="tip-hover tip-hover-five">
+                        About Us
+                    </div>
+                </div>
+                <div class="tool-tip">
+                    <img src="./images/icon-contactless-tip.svg" class="icon-dash">
+
+                    <div class="tip-hover tip-hover-six">
+                        Contact Us
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== side bar End ==== -->
+
+    <!-- ==== side bar open start ==== -->
+
+    <div class="sidebar-open-main">
+        <div class="back-and-close">
+            <div class="back-btn">
+                <a href="javascript:;">
+                    <img src="./images/solutionWebsite/arrow-left-solid.svg" />
+                    Back
+                </a>
+            </div>
+            <div class="close-btn">
+                <a href="javascript:;">
+                    <img src="./images/solutionWebsite/x-solid.svg" />
+                </a>
+            </div>
+        </div>
+        <div class="sidebar-open-main-counte">
+            <div class="sidebar-open-one">
+                <div class="sidebar-open-head">
+                    Online Ordering System
+                </div>
+                <div class="sidebar-open-menu-one">
+                    <a href="javascript:;">
+                        <img src="./images/icon_dash.png" class="desh-hover">
+                        Dashboard
+                    </a>
+                </div>
+                <div class="sidebar-open-menu-one sidebar-open-menu-two">
+                    <a href="javascript:;">
+                        <img src="./images/shopping-clr.png" class="desh-hover">
+                        Branded Products
+                    </a>
+                    <div class="sidebar-open-drop-menu">
+                        <a href="javascript:;">Banners & Barriers</a>
+                        <a href="javascript:;">Baskets</a>
+                        <a href="javascript:;">Stationary</a>
+                    </div>
+                </div>
+                <div class="sidebar-open-menu-one">
+                    <a href="javascript:;">
+                        <img src="./images/shopping-cart-clr.png" class="desh-hover">
+                        My Cart
+                    </a>
+                </div>
+                <div class="sidebar-open-menu-one">
+                    <a href="javascript:;">
+                        <img src="./images/report-chart-clr.png" class="desh-hover">
+                        Reports
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-open-two">
+                <div class="sidebar-open-menu-one">
+                    <a href="javascript:;">
+                        <img src="./images/icon-account.png" class="desh-hover">
+                        Account Profile
+                    </a>
+                </div>
+                <div class="sidebar-open-menu-one">
+                    <a href="javascript:;">
+                        <img src="./images/icon-faq-square.svg" class="desh-hover">
+                        FAQs
+                    </a>
+                </div>
+                <div class="sidebar-open-menu-one">
+                    <a href="javascript:;">
+                        <img src="./images/icon-tools-tip.svg" class="desh-hover">
+                        Get Support
+                    </a>
+                </div>
+                <div class="sidebar-open-menu-one">
+                    <a href="javascript:;">
+                        <img src="./images/icon-info-tip.svg" class="desh-hover">
+                        About Us
+                    </a>
+                </div>
+                <div class="sidebar-open-menu-one">
+                    <a href="javascript:;">
+                        <img src="./images/icon-contactless-tip.svg" class="desh-hover">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================================== Solution Website SideBar Start ========================================== -->
+
+
+    <!-- ================ Redi-form Website Slick Slider start ========================================= -->
+
+    <div class="Product-Detail-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="show-img">
+                        <div class="sld">
+                            <img src="./images/redi-form/slide-main.png" />
+                        </div>
+                        <div class="sld">
+                            <img src="./images/redi-form/slide-main.png" />
+                        </div>
+                        <div class="sld">
+                            <img src="./images/redi-form/slide-main.png" />
+                        </div>
+                        <div class="sld">
+                            <img src="./images/redi-form/slide-main.png" />
+                        </div>
+                    </div>
+                    <div class="select-img">
+                        <div class="sld">
+                            <img src="./images/redi-form/slide-main.png" />
+                        </div>
+                        <div class="sld">
+                            <img src="./images/redi-form/slide-main.png" />
+                        </div>
+                        <div class="sld">
+                            <img src="./images/redi-form/slide-main.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-details-counte">
+                        <div class="pd-head">
+                            <h4>LOCATIONRCGA-PE68 - Polyurethane
+                                Encapsulation and Potting Resin for
+                                Junction Boxes and Enclosures</h4>
+                        </div>
+                        <div class="pd-dtls">
+                            <p>Junction boxes and enclosures are designed to provide protection for the
+                                electrical compo nents and connections from environmental stresses and
+                                contaminants.They are expected to preserve the long-term electrical
+                                performance integrity of the module and prevent tempering with the
+                                connections and electronics inside.
+                            </p>
+                        </div>
+                        <div class="pd-btn">
+                            <a href="javascript:;"><img src="./images/dndl-ctlg.png" /> Download Catalogue</a>
+                            <a href="javascript:;"><img src="./images/inq-product.png" /> Enquire About this
+                                Product</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================ Redi-form Website Slick Slider End ========================================= -->
+
+    <!-- ==================================== Overly Section start  ========================================= -->
+
+    <div class="main">
+        <div class="Solving-main">
+            <div class="container">
+                <h1>What we are <span class="blue-color">Solving</span></h1>
+                <div class="all-solving-counte-main">
+                    <div class="row r-one p-stky-one box">
+                        <div class="col-md-6">
+                            <div class="image-solv">
+                                <img src="./images/gUe7oNmozZx7X6hCfBxjs0SBcMg.webp">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="solv-counte">
+                                <h6>Convert with <span class="blue-color">Personalised Recommendations</span></h6>
+                                <div class="solv-counte-p">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p>Understand customer by probing actively and observing online activity</p>
+                                </div>
+                                <div class="solv-counte-p">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p>Educate and recommend by matching customer use case with brand goal </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row r-two p-stky-one box">
+                        <div class="col-md-6">
+                            <div class="solv-counte">
+                                <h6>Transform <span class="blue-color">Chats into Checkouts</span></h6>
+                                <div class="solv-counte-p">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p>Nudge to Add to Cart, Buy Now and Select Combos</p>
+                                </div>
+                                <div class="solv-counte-p">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p>Ramp up Conversions and AOV with conversational purchase journeys</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="image-solv">
+                                <img src="./images/zXvuIf1eQLtAHGuj2gmSCMLmqI.webp">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row r-three p-stky-one box">
+                        <div class="col-md-6">
+                            <div class="image-solv">
+                                <img src="./images/d3TRo11bEfTuzokYFmGHvIbrXXY.webp">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="solv-counte">
+                                <h6>Say <span class="blue-color">No to Costly Support</span></h6>
+                                <div class="solv-counte-p">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p>Answer specific queries in 125 languages, instantaneously 24*7</p>
+                                </div>
+                                <div class="solv-counte-p">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p>Assist with support promptly and empathetically without employing live agents</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row r-two r-four p-stky-one box">
+                        <div class="col-md-6">
+                            <div class="solv-counte">
+                                <h6>Turn <span class="blue-color">Visitors into Leads</span></h6>
+                                <div class="solv-counte-p">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p>Generate warm leads or appointments by capturing user attributes conversationally
+                                    </p>
+                                </div>
+                                <div class="solv-counte-p">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p>Create insights and user profiles to optimize website and campaigns</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="image-solv">
+                                <img src="./images/AxY1tDPgykKkhxCqOoaAMqE80c.webp">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================================== Overly Section End  ========================================= -->
+
+    <!--===================================== section scroll with Content scroll start ============================-->
+
+    <div class="real-result-main">
+        <h6>Real Results, Guaranteed</h6>
+        <h2>Achieve Clear and Healthy Skin with Oneme <br> Beauty Spa in Three Easy Steps</h2>
+    </div>
+    <div class="real-result-counte">
+
+        <div class="row">
+
+            <div class="col-md-6 Schedule-counte-col">
+                <div class="Schedule-counte">
+                    <nav id="section-menu">
+                        <ul>
+                            <li>
+                                <a id="nav_One" href="#section-one">
+                                    <div class="scroll-counte">
+                                        <div class="number">1 / 3</div>
+                                        <h2>Schedule a Trial Facial in Singapore</h2>
+                                        <p>Begin your journey by reserving a trial facial session in Singapore to
+                                            immerse yourself in our rejuvenating treatment.
+                                        </p>
+                                        <button class="scroll-btn">Book Trial Session</button>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a id="nav_Two" href="#section-two">
+                                    <div class="scroll-counte">
+                                        <div class="number">2 / 3</div>
+                                        <h2>Experience a Skin Analysis with Oneme Beauty Spa</h2>
+                                        <p>Receive a complimentary, thorough skin analysis using VISIA technology at
+                                            Oneme Beauty Spa. This analysis identifies crucial areas of concern,
+                                            offering a precise diagnostic evaluation of your skin.
+                                        </p>
+                                        <button class="scroll-btn">Book Trial Session</button>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a id="nav_Three" href="#section-three">
+                                    <div class="scroll-counte">
+                                        <div class="number">3 / 3</div>
+                                        <h2>Personalized Consultation</h2>
+                                        <p>Benefit from a tailored consultation at Oneme Beauty Spa with our skilled
+                                            expert, who will address your individual skin requirements using our
+                                            trusted skin transformation system. This personalized approach is
+                                            designed to guide you towards optimal skin health.
+                                        </p>
+                                        <button class="scroll-btn">Book Trial Session</button>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="col-md-6 Schedule-counte-col-sec">
+
+                <section id="section-one" class="section scroll-item" title="One">
+                    <div class="inner">
+                        <h2></h2>
+                    </div>
+                </section>
+                <section id="section-two" class="section scroll-item" title="Two">
+                    <div class="inner">
+                        <h2></h2>
+                    </div>
+                </section>
+                <section id="section-three" class="section scroll-item" title="Three">
+                    <div class="inner">
+                        <h2></h2>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+    </div>
+    <!--===================================== section scroll with Content scroll End ============================-->
+
+
+
+    <!-- ============================ Car Dealership navbar With responsive Start ============================== -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top mainnvbr">
+            <!--======================= hover ringtone section start ====================================-->
+            <audio id="powerOn" controls loop>
+                <source src="./images/WhatsApp Audio 2024-09-24 at 11.05.48_c02d6395.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="powerOff" controls>
+                <source src="./images/WhatsApp Audio 2024-09-24 at 11.05.48_c02d6395.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="hover" controls>
+                <source src="./images/WhatsApp Audio 2024-09-24 at 11.05.48_c02d6395.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <!--======================= hover ringtone section End  ====================================-->
+
+            <div class="container nvbrcntrn">
+                <a class="navbar-brand" href="#" data-aos="fade-right">Car Dealership</a>
+                <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+
+                    <div class="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!--======================= hover ringtone class Add Ul section Add  ===========================-->
+                    <ul class="navbar-nav mnnvbr-ul menu">
+                        <!--======================= hover ringtone class Add Ul nuabar Add  ===========================-->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="BuyNewCars.html">Buy New Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buyUsedCars.html">Buy Used Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sell.html">Sell</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Our-Services.html">Our Services </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="book-btn"><a class="nav-link" href="#">BOOK AN
+                                    APPOINTMENT</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+    </nav>
+
+
+    <!-- ============================ Car Dealership navbar With responsive End ============================== -->
+
+    <!-- ============================ Eddystone Website Contact Page Start ======================================== -->
+
+    <div class="main">
+        <div class="carrers-page-banner">
+            <div class="container">
+                <div class="careers-banner-ctn">
+                    <h2>Contact Us</h2>
+                    <div class="border-line">
+                        <div class="line">
+                            <div class="square"></div>
+                        </div>
+                    </div>
+                    <div class="carrers-counte">
+                        <p>We would like to take this opportunity on behalf of our company to extend a personal
+                            invitation to you to visit our facilities at:
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===== contact us page End ==== -->
+
+        <!-- ==== contact form start ==== -->
+        <div class="carrers-main contact-careers-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-us-form-main">
+                            <div class="contact-address">
+                                <div class="m-add">
+                                    <div class="add-icon">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div class="madd">
+                                        <h5>Address</h5>
+                                        <h6>Eddystone Auto Collision Ltd.</h6>
+                                        <p>700 Chrislea Rd. <br>
+                                            Woddbridge , Ontario <br>
+                                            L4L 8K9</p>
+                                    </div>
+                                </div>
+                                <div class="m-add">
+                                    <div class="add-icon">
+                                        <i class="bi bi-telephone"></i>
+                                    </div>
+                                    <div class="madd">
+                                        <h5>Phone</h5>
+                                        <p>905-856-6141</p>
+                                    </div>
+                                </div>
+                                <div class="m-add">
+                                    <div class="add-icon">
+                                        <i class="bi bi-envelope"></i>
+                                    </div>
+                                    <div class="madd">
+                                        <h5>Email</h5>
+                                        <p><a href="javascript:;">info@eddystone.ca</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="carrers-form">
+                            <h6>Send us your inquiry</h6>
+                            <form>
+                                <div class="row f-and-l-name">
+                                    <div class="col-md-6">
+                                        <div class="itp-main">
+                                            <input type="text" required>
+                                            <div class="labelline">First Name</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="itp-main">
+                                            <input type="text" required>
+                                            <div class="labelline">Last Name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row f-and-l-name f-and-l-name-mobile">
+                                    <div class="col-md-6">
+                                        <div class="itp-main">
+                                            <input type="text" required>
+                                            <div class="labelline">Email</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="itp-main">
+                                            <input type="tel" required>
+                                            <div class="labelline">Phone Number</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="itp-main itp-main-mobile">
+                                            <select>
+                                                <option>---</option>
+                                                <option>Collision Repair</option>
+                                                <option>Paint</option>
+                                                <option>Vehicle pick up</option>
+                                                <option>General</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="itp-main text-aria">
+                                            <textarea placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="itp-main itp-file">
+                                            <input type="file" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="capcha-section">
+                                            <div class="g-recaptcha"
+                                                data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="submit" class="carrers-butn">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================ Eddystone Website Contact Page End ======================================== -->
+
+        <!-- ====================================== Get quote satrt ================================================== -->
+        <div class="get-qoute-main">
+            <div class="get-quote">
+                <a href="javascript:;">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21 0H0V9L10.5743 24V16.5H21C22.6567 16.5 24 15.1567 24 13.5V3C24 1.34325 22.6567 0 21 0ZM7.5 9.75C6.672 9.75 6 9.07875 6 8.25C6 7.42125 6.672 6.75 7.5 6.75C8.328 6.75 9 7.42125 9 8.25C9 9.07875 8.328 9.75 7.5 9.75ZM12.75 9.75C11.922 9.75 11.25 9.07875 11.25 8.25C11.25 7.42125 11.922 6.75 12.75 6.75C13.578 6.75 14.25 7.42125 14.25 8.25C14.25 9.07875 13.578 9.75 12.75 9.75ZM18 9.75C17.172 9.75 16.5 9.07875 16.5 8.25C16.5 7.42125 17.172 6.75 18 6.75C18.828 6.75 19.5 7.42125 19.5 8.25C19.5 9.07875 18.828 9.75 18 9.75Z"
+                            fill="#000000"></path>
+                    </svg>
+                    <i class="fa-solid fa-xmark"></i>
+                    Get Quote
+                </a>
+                <div class="get-qoute-popup">
+                    <div class="get-qoute-head">
+                        <div class="get-head-five">
+                            <div class="get-number">
+                                <div class="nmbe-get">1</div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <div class="get-counte">
+                                Hi there! Could you please provide your contact information?This question is required.*
+                                <p>Kindly provide a WhatsApp registered phone number</p>
+                                <div class="get-itp">
+                                    <form>
+                                        <div class="get-ipt-one">
+                                            First name *
+                                        </div>
+                                        <div class="get-ipt-typ">
+                                            <input type="text" placeholder="Jane" required>
+                                        </div>
+                                        <div class="get-ipt-one">
+                                            Phone number *
+                                        </div>
+                                        <div class="get-ipt-typ">
+                                            <input type="number" placeholder="81234567" required>
+                                        </div>
+                                        <div class="get-ipt-one">
+                                            Email *
+                                        </div>
+                                        <div class="get-ipt-typ">
+                                            <input type="email" placeholder="name@example.com" required>
+                                        </div>
+                                        <div class="get-btn">
+                                            <button type="submit">ok</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================================== Get quote End ================================================== -->
+
+
+
+        <!-- ====================================== Cyid Our Team start  ================================================== -->
+
+
+
+        <div class="home-page-our-team-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="home-page-our-team-card-sec">
+                            <div class="home-our-team-card">
+                                <div class="home-our-team-img">
+                                    <img src="./images/Cyid/our-team-hohme-1.png" />
+                                </div>
+                                <div class="home-our-team-hover">
+                                    <div class="home-our-hover-icon">
+                                        <a href="javascript:;" class="icon">
+                                            <i class="fa-brands fa-instagram icon-one"></i>
+                                            <i class="fa-brands fa-instagram icon-two"></i>
+                                        </a>
+                                    </div>
+                                    <div class="home-our-hover-icon">
+                                        <a href="javascript:;" class="icon">
+                                            <i class="fa-brands fa-facebook-f icon-one"></i>
+                                            <i class="fa-brands fa-facebook-f icon-two"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-page-our-team-member-name">
+                                <h4>Nadine Wickeremasuriya</h4>
+                                <p>Interior Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="home-page-our-team-card-sec">
+                            <div class="home-our-team-card">
+                                <div class="home-our-team-img">
+                                    <img src="./images/Cyid/our-home-img-2.jpg" />
+                                </div>
+                                <div class="home-our-team-hover">
+                                    <div class="home-our-hover-icon">
+                                        <a href="javascript:;" class="icon">
+                                            <i class="fa-brands fa-instagram icon-one"></i>
+                                            <i class="fa-brands fa-instagram icon-two"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-page-our-team-member-name">
+                                <h4>Melvin Liow</h4>
+                                <p>Interior Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="home-page-our-team-card-sec">
+                            <div class="home-our-team-card">
+                                <div class="home-our-team-img">
+                                    <img src="./images/Cyid/our-home-3img.jpg" />
+                                </div>
+                                <div class="home-our-team-hover">
+                                    <div class="home-our-hover-icon">
+                                        <a href="javascript:;" class="icon">
+                                            <i class="fa-brands fa-instagram icon-one"></i>
+                                            <i class="fa-brands fa-instagram icon-two"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-page-our-team-member-name">
+                                <h4>Joyce Ang</h4>
+                                <p>Interior Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================================== Cyid Our Team End  ================================================== -->
+
+
+        <!-- ====================================== Cyid Testimonials start ================================================== -->
+
+        <div class="home-page-testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="javascript:;">
+                            <div class="home-page-testimonial-counte">
+                                <div class="qoute-icon-img">
+                                    <img src="./images/quote.png">
+                                </div>
+                                <div class="quotes-counte">
+                                    <p>I highly recommend Joyce to anyone looking for a talented and dedicated interior
+                                        designer. Her passion for design and commitment to client satisfaction make her
+                                        an
+                                        invaluable asset to any project.
+                                    </p>
+                                </div>
+                                <div class="quotes-counte-name">
+                                    <p>Wei Xiang Chiang</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="javascript:;">
+                            <div class="home-page-testimonial-counte">
+                                <div class="qoute-icon-img">
+                                    <img src="./images/quote.png">
+                                </div>
+                                <div class="quotes-counte">
+                                    <p>They were very transparent with the quote and detailed the per-unit costs so you
+                                        know
+                                        exactly what you are paying for. They also had one of the lowest quotes
+                                        comparatively. We were also surprised to be provided with 3D drawings even
+                                        before we
+                                        signed with ChengYi. So far no other ID firms have provided such service.
+                                    </p>
+                                </div>
+                                <div class="quotes-counte-name">
+                                    <p>Hann Ah Leong</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="javascript:;">
+                            <div class="home-page-testimonial-counte">
+                                <div class="qoute-icon-img">
+                                    <img src="./images/quote.png">
+                                </div>
+                                <div class="quotes-counte">
+                                    <p>We are really happy with the outcome of our renovation and would recommend
+                                        ChengYi
+                                        and their designers to anyone looking to renovate their home.
+                                    </p>
+                                </div>
+                                <div class="quotes-counte-name">
+                                    <p>Te Vivre</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="javascript:;">
+                            <div class="home-page-testimonial-counte">
+                                <div class="qoute-icon-img">
+                                    <img src="./images/quote.png">
+                                </div>
+                                <div class="quotes-counte">
+                                    <p>We were looking for ID firm and chanced upon Chengyi Interior Design on
+                                        instagram. It
+                                        was definitely love at first sight after looking at their portfolio! We went
+                                        ahead
+                                        with them and got Melvin as our ID.
+                                        We were impressed by him even after the first meet up. He was well prepared and
+                                        he
+                                        totally knew what we were looking for. We knew we didn’t regret our decision.
+                                        Highly
+                                        recommend everyone to choose Chengyi Interior Design if you do not wanna go
+                                        through
+                                        renovation nightmares!!!
+                                    </p>
+                                </div>
+                                <div class="quotes-counte-name">
+                                    <p>Audrey Yap</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="javascript:;">
+                            <div class="home-page-testimonial-counte">
+                                <div class="qoute-icon-img">
+                                    <img src="./images/quote.png">
+                                </div>
+                                <div class="quotes-counte">
+                                    <p>If you are looking for an ID that can take care of your entire project management
+                                        process while having a peace of mind, you have come to the right place. My wife
+                                        and
+                                        I knew nothing much about renovation works. Most importantly, we really
+                                        appreciate
+                                        his transparency and sincerity. Highly recommended ID!
+                                    </p>
+                                </div>
+                                <div class="quotes-counte-name">
+                                    <p>Sandy Tan</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="javascript:;">
+                            <div class="home-page-testimonial-counte">
+                                <div class="qoute-icon-img">
+                                    <img src="./images/quote.png">
+                                </div>
+                                <div class="quotes-counte">
+                                    <p>Having Nadine as our ID was one of the best decision that me and my wife has made
+                                        for
+                                        our home. She has great taste as she managed to transform our space into a haven
+                                        that we love. From the initial consultation till the key handover, she showed
+                                        great
+                                        expertise and professionalism plus her attention to detail was evident. Highly
+                                        recommend having Nadine as your ID if you're looking to elevate your old place
+                                        or to
+                                        bring your vision to life in your new place.
+                                    </p>
+                                </div>
+                                <div class="quotes-counte-name">
+                                    <p>Jansen Lim</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="javascript:;">
+                            <div class="home-page-testimonial-counte">
+                                <div class="qoute-icon-img">
+                                    <img src="./images/quote.png">
+                                </div>
+                                <div class="quotes-counte">
+                                    <p>We started sourcing for ID one year ahead of our project estimated completion
+                                        date.
+                                        In total, we had approached 4 ID firms to bounce ideas with the respective IDs.
+                                        At
+                                        last, we had decided to entrust our home design to Joyce from Chengyi. Overall,
+                                        we
+                                        are satisfied with Joyce service and would recommend it to anyone who are
+                                        looking
+                                        for a reliable ID.
+                                    </p>
+                                </div>
+                                <div class="quotes-counte-name">
+                                    <p>Merlene Kok</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="custom-arrow">
+                    <div class="arrow_prev">
+                        <img src="./images/Cyid/left-chevron.png" />
+                        <div class="arow-lft">
+                            <img src="./images/Cyid/left-chevron.png" />
+                        </div>
+                    </div>
+                    <div class="arrow_next">
+                        <img src="./images/Cyid/right-chevron.png" />
+                        <div class="arow-rigt">
+                            <img src="./images/Cyid/right-chevron.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================================== Cyid Testimonials End ================================================== -->
+
+        <!-- ====================================== Counter Section Start ================================================== -->
+        <div class="counter-main">
+            <div class="wrapper">
+                <div class="counter col_fourth">
+                    <h2 class="timer count-title count-number" data-to="300" data-speed="1500">1211</h2>
+                    <p class="count-text ">SomeText GoesHere</p>
+                </div>
+
+                <div class="counter col_fourth">
+                    <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+                    <p class="count-text ">SomeText GoesHere</p>
+                </div>
+
+                <div class="counter col_fourth">
+                    <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+                    <p class="count-text ">SomeText GoesHere</p>
+                </div>
+
+                <div class="counter col_fourth end">
+                    <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+                    <p class="count-text ">SomeText GoesHere</p>
+                </div>
+            </div>
+        </div>
+        <!-- ====================================== Counter Section End ================================================== -->
+
+
+        <!-- ================================= dotted section slider start ===============================================  -->
+
+        <div class="container-fluid dots-section-main">
+
+            <div class="dotsone">
+                <a href="#">
+                    <img src="./images/wrapstyle/benner-one.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="dotsone">
+                <a href="#">
+                    <img src="./images/wrapstyle/benner-two.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="dotsone">
+                <a href="#">
+                    <img src="./images/wrapstyle/benner-three.jpg" alt="">
+                </a>
+            </div>
+
+        </div>
+
+        <!-- ================================= dotted section slider End ===============================================  -->
+
+        <!-- ================================= chatBox section start only HTML And CSS ======================================  -->
+
+        <div class="cht-box-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="chatbot">
+                            <div class="header-chat">
+                                <div class="cht-bot-name">
+                                    <img src="./images/ChatBox/chat-bot.png" alt="">
+                                    <h2>Education Counsellor</h2>
+                                </div>
+                                <!-- <span class="close-btn material-symbols-outlined">close</span> -->
+                            </div>
+                            <ul class="chatbox">
+                                <li class="chat incoming">
+                                    <span class="material-symbols-outlined"><img src="./images/ChatBox/user.png"
+                                            alt=""></span>
+                                    <p>Hi there <br>How can I help you today?</p>
+                                </li>
+                                <li class="chat">
+                                    <span class="material-symbols-outlined"><img src="./images/ChatBox/user.png"
+                                            alt=""></span>
+                                    <p>Please give me <br>Proper proper design </p>
+                                </li>
+                            </ul>
+                            <div class="chat-input">
+                                <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+                                <span id="send-btn" class="material-symbols-rounded">send</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================= chatBox section start only HTML And CSS ======================================  -->
+
+        <!-- ========================== progress-line Start ==========================================================  -->
+
+        <div class="header">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+
+        <!-- ========================== progress-line End ==========================================================  -->
+
+        <!-- ============================= Contact form validation start  ========================================  -->
+
+        <section id="contect-us-hiro-sec">
+
+            <div class="container-fluid cnct-hiro-sec">
+
+                <div class="row hiro-sec-row">
+
+                    <div class="col-md-6 c-hiro-contect">
+
+                        <div class="row contect-head-row">
+                            <div class="col-6 coct-heading">
+                                <h1 class="h-c-o-c-t" data-aos="fade-up" data-aos-duration="2000">Make an Appointment
+                                    Experience Elegance</h1>
+                            </div>
+                            <div class="col-6 coct-img">
+                                <img src="contect-us-image.png" class="img-fluid" data-aos="fade-up"
+                                    data-aos-duration="3000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ====== contect form Start ====== -->
+
+                    <div class="col-md-6 c-hiro-img">
+
+                        <div class="container-fluid conct-main" data-aos="fade-up" data-aos-duration="2000">
+                            <form id="formvld">
+
+                                <label class="form-lable">Full Name *</label>
+                                <label id="name-error" class="error" for="name">Please enter at least 2
+                                    characters.</label>
+                                <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                    <input type="text" class="form-control" name="name"
+                                        placeholder="Enter Your Full Name" required>
+                                </div>
+
+                                <label class="form-lable">Email *</label> <label id="email-error" class="error"
+                                    for="email">Please enter a valid email address.</label>
+                                <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                    <input type="text" class="form-control" name="email" placeholder="Enter Your Email"
+                                        required>
+                                </div>
+
+                                <label class="form-lable">Phone No *</label> <label id="phone-error" class="error"
+                                    for="phone">Please enter a valid number.</label>
+                                <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                    <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                    <input type="text" class="form-control" name="phone"
+                                        placeholder="Enter Your Phone Number" required>
+                                </div>
+
+                                <label class="form-lable">Website Url *</label>
+                                <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                    <span class="input-group-text"><i class="bi bi-globe-asia-australia"></i></span>
+                                    <input type="url" class="form-control" placeholder="Url" required>
+                                </div>
+
+                                <label class="form-lable">Number of aligner patients per year </label>
+                                <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                    <label class="input-group-text"><i class="bi bi-people"></i></label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>less than 100</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+
+                                <label class="form-lable">Job title and background</label>
+                                <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                    <label class="input-group-text"><img src="Vector.png" class="img-fluid"></label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>Select Type</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+
+                                <label class="form-lable">How many staff members do you have?</label>
+                                <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                    <label class="input-group-text"><i class="bi bi-person-plus"></i></label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>1-5</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <p class="text-center mt-3"><input type="submit" class="smbtn text-white rounded"></p>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <!-- ====== contect form End ====== -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ============================= Contact form validation End  ========================================  -->
+
+        <!--============================== typeWriter section start ===================================================-->
+
+        <div class="typeWritersection-wrapper">
+            <div class="centeredBox">
+                <span id="typewriter" data-array=""></span>
+                <span class="cursor"></span>
+            </div>
+        </div>
+        <!--============================== typeWriter section End ===================================================-->
+
+        <!-- ============================== PosswordCheck section start ===================================================-->
+
+        <div class="posswordCheck">
+            <form action="" id="myform">
+                <input type="password" placeholder="Password" id="password">
+                <img src="./Password-Checker/Password-Checker/eye1.png" id="eye">
+            </form>
+        </div>
+
+        <!--============================== PosswordCheck section End =================================================== -->
+
+        <!--======================================== FAQ section start ==================================================-->
+
+        <div class="FAQ-Main">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft faqcol" data-wow-delay="0.1s">
+                    <div class="faq-main-section">
+                        <div class="faq-head">
+                            <h2>Step by step to register your company online</h2>
+                        </div>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item tab-a" data-id="tab1">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <span class="stp">Step 1</span> Choose Company Name & Enter Company details
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Let us know your preferred Company name, and we will search for its.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item tab-a" data-id="tab2">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        <span class="stp">Step 1</span> Enter yout Company Registered Address
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Provide us with your Company Address. If you do not have an official company
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item tab-a" data-id="tab3">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        <span class="stp">Step 1</span> Provide Director(s) Information
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Provide us with the particulars of your Company Directors. If you do not
+                                            have.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item tab-a" data-id="tab4">
+                                <h2 class="accordion-header" id="flush-headingfour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapsefour" aria-expanded="false"
+                                        aria-controls="flush-collapsefour">
+                                        <span class="stp">Step 1</span> Provide Shareholders Information
+                                    </button>
+                                </h2>
+                                <div id="flush-collapsefour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Provide us with the particulars of all your shareholders, be it Individual or
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item tab-a" data-id="tab5">
+                                <h2 class="accordion-header" id="flush-headingfive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapsefive" aria-expanded="false"
+                                        aria-controls="flush-collapsefive">
+                                        <span class="stp">Step 1</span> Review Select Packages
+                                    </button>
+                                </h2>
+                                <div id="flush-collapsefive" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Review the information that you have filled in, then select the </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item tab-a" data-id="tab6">
+                                <h2 class="accordion-header" id="flush-headingsix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapsesix" aria-expanded="false"
+                                        aria-controls="flush-collapsesix">
+                                        <span class="stp">Step 1</span> Confirm and Make Payment
+                                    </button>
+                                </h2>
+                                <div id="flush-collapsesix" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>Confirm your package selections, including some essential but optional</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item tab-a" data-id="tab7">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button rounded-top" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseTOne">
+                                    Why did you choose Our Email Services?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body my-2">
+                                    <h5>Dolor sit amet consectetur adipisicing elit.</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo impedit,
+                                        sapiente quis illo quia nulla atque maxime fuga minima ipsa quae cum
+                                        consequatur, sit, delectus exercitationem odit officiis maiores! Neque, quidem
+                                        corrupti modi architecto eos saepe incidunt dignissimos rerum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 faqcol">
+                    <div class="FAQ-img">
+                        <div class="tb-img one tab-active" data-id="tab1"></div>
+                        <div class="tb-img two" data-id="tab2"></div>
+                        <div class="tb-img three" data-id="tab3"></div>
+                        <div class="tb-img four" data-id="tab4"></div>
+                        <div class="tb-img five" data-id="tab5"></div>
+                        <div class="tb-img six" data-id="tab6"></div>
+                        <div class="tb-img seven" data-id="tab7"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--======================================== FAQ section End ==================================================-->
+
+        <!-- ======================================== Responsive Tab panel section start ================================= -->
+
+        <div class="container-fluid meet-our-team">
+            <h1 data-aos="fade-up" data-aos-duration="1500"></h1>
+            <div class="container-fluid meet-out-team-two" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item active" role="presentation" data-tab="tab-1">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                    aria-selected="true">All</button>
+                            </li>
+                            <li class="nav-item" role="presentation" data-tab="tab-2">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                    type="button" role="tab" aria-controls="profile" aria-selected="false">I AM
+                                    Recovery</button>
+                            </li>
+                            <li class="nav-item" role="presentation" data-tab="tab-3">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                    type="button" role="tab" aria-controls="contact" aria-selected="false">I AM
+                                    Academy</button>
+                            </li>
+                            <li class="nav-item" role="presentation" data-tab="tab-4">
+                                <button class="nav-link" id="homeim" data-bs-toggle="tab" data-bs-target="#homeim-m"
+                                    type="button" role="tab" aria-controls="homeim" aria-selected="false">I AM
+                                    HOME</button>
+                            </li>
+                            <li class="nav-item" role="presentation" data-tab="tab-5">
+                                <button class="nav-link" id="leadership" data-bs-toggle="tab"
+                                    data-bs-target="#leadership-m" type="button" role="tab" aria-controls="leadership"
+                                    aria-selected="false">Leadership</button>
+                            </li>
+                            <li class="nav-item" role="presentation" data-tab="tab-6">
+                                <button class="nav-link" id="marketing" data-bs-toggle="tab"
+                                    data-bs-target="#marketing-m" type="button" role="tab" aria-controls="marketing"
+                                    aria-selected="false">Marketing</button>
+                            </li>
+                            <li class="nav-item" role="presentation" data-tab="tab-7">
+                                <button class="nav-link" id="finance" data-bs-toggle="tab" data-bs-target="#finance-m"
+                                    type="button" role="tab" aria-controls="finance"
+                                    aria-selected="false">Finance</button>
+                            </li>
+                            <li class="nav-item" role="presentation" data-tab="tab-8">
+                                <button class="nav-link" id="operations" data-bs-toggle="tab"
+                                    data-bs-target="#operations-m" type="button" role="tab" aria-controls="operations"
+                                    aria-selected="false">Operations</button>
+                            </li>
+                            <li class="nav-item" role="presentation" data-tab="tab-9">
+                                <button class="nav-link" id="partners" data-bs-toggle="tab" data-bs-target="#partners-m"
+                                    type="button" role="tab" aria-controls="partners"
+                                    aria-selected="false">Partners</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active current" id="home" role="tabpanel"
+                                aria-labelledby="home-tab">
+                                <div class="container-fluid all-leader">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-one.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Alex Smith</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-two.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Rox Brown</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">Leadership</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-three.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Carry Jim</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="container-fluid all-leader">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-one.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Alex Smith</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-two.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Rox Brown</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">Leadership</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact">
+                                <div class="container-fluid all-leader">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-one.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Alex Smith</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-two.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Rox Brown</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">Leadership</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-three.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Carry Jim</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="homeim-m" role="tabpanel" aria-labelledby="homeim">
+                                <div class="container-fluid all-leader">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-one.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Alex Smith</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-two.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Rox Brown</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">Leadership</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="leadership-m" role="tabpanel" aria-labelledby="leadership">
+                                <div class="container-fluid all-leader">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-one.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Alex Smith</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-two.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Rox Brown</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">Leadership</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-three.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Carry Jim</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="marketing-m" role="tabpanel" aria-labelledby="marketing-m">
+                                <div class="container-fluid all-leader">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-one.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Alex Smith</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-two.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Rox Brown</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">Leadership</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="finance-m" role="tabpanel" aria-labelledby="finance-m">
+                                <div class="container-fluid all-leader">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-one.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Alex Smith</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-two.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Rox Brown</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">Leadership</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-three.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Carry Jim</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="operations-m" role="tabpanel" aria-labelledby="operations-m">
+                                <div class="container-fluid all-leader">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-one.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Alex Smith</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-two.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Rox Brown</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">Leadership</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="partners-m" role="tabpanel" aria-labelledby="partners-m">
+                                <div class="container-fluid all-leader">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-one.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Alex Smith</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-two.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Rox Brown</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">Leadership</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="all-card-counte">
+                                                <div class="leader-img">
+                                                    <img src="./images/about/prson-three.jpg">
+                                                </div>
+                                                <div class="leader-detals">
+                                                    <h4>Carry Jim</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.</p>
+                                                    <a href="#" class="leader-position">I AM Recovery</a>
+                                                    <div class="social-icon">
+                                                        <a href="#"><img src="./images/about/instagram.png"></a>
+                                                        <a href="#"><img src="./images/about/facebook.png"></a>
+                                                        <a href="#"><img src="./images/about/twitter.png"></a>
+                                                        <a href="#"><img src="./images/about/youtube.png"></a>
+                                                        <a href="#"><img src="./images/about/linkedin.png"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================================== Responsive Tab panel section End ================================= -->
+
+
+        <!-- =================================== cards new style start ============================================== -->
+
+        <section class="creative-cards style-one">
+            <div class="container">
+                <div class="row">
+                    <div class="card-column">
+                        <div class="card-details">
+                            <div class="card-icons">
+                                <img class="light-icon" src="https://imgpanda.com/upload/ib/1yIWjyG41o.png"
+                                    alt="icon" />
+                            </div>
+                            <h3><a href="https://www.fiverr.com/aliali44">Core Planning</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectne auctor aliquet. Aenean sollicitudi bibendum auctor.
+                            </p>
+                            <a class="read-more-btn" href="#"><i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-column">
+                        <div class="card-details">
+                            <div class="card-icons">
+                                <img class="light-icon" src="https://imgpanda.com/upload/ib/Q4tSh2ctkH.png"
+                                    alt="icon" />
+                            </div>
+                            <h3><a href="#">Traditional Designs</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectne auctor aliquet. Aenean sollicitudi bibendum auctor.
+                            </p>
+                            <a class="read-more-btn" href="#"><i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-column">
+                        <div class="card-details">
+                            <div class="card-icons">
+                                <img class="light-icon" src="https://imgpanda.com/upload/ib/YQdOwN6IDJ.png"
+                                    alt="icon" />
+                            </div>
+                            <h3><a href="#">Quality Materials</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectne auctor aliquet. Aenean sollicitudi bibendum auctor.
+                            </p>
+                            <a class="read-more-btn" href="#"><i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =================================== cards new style End ============================================== -->
+
+        <!-- =================================== cursor pointer start ============================================== -->
+        <div class="circlevimal">
+            <div class="circle">cursor<br>pointer</div>
+        </div>
+        <!-- =================================== cursor pointer End ============================================== -->
+
+        <!-- /*=============================== border animation section start ==============================* -->
+        <div class="animation-seven"></div>
+        <!-- /*=============================== border animation section End ==============================* -->
+
+        <!--========================== Countdown Timer section start ========================================-->
+        <div class="countdownMain">
+            <div class="container clock-container">
+                <div class="row clockmain">
+                    <div class="col-md-3 clock-col">
+                        <div class="clock-days clock-timer">&nbsp;</div>
+                        <div class="clock-label label-days">
+                            Days
+                        </div>
+                    </div>
+                    <div class="col-md-3 clock-col-2">
+                        <div class="clock-hours clock-timer">&nbsp;</div>
+                        <div class="clock-label label-hour">
+                            Hours
+                        </div>
+                    </div>
+                    <div class="col-md-3 clock-col-3">
+                        <div class="clock-minutes clock-timer">&nbsp;</div>
+                        <div class="clock-label label-minutes">
+                            Minutes
+                        </div>
+                    </div>
+                    <div class="col-md-3 clock-col-4">
+                        <div class="clock-seconds clock-timer">&nbsp;</div>
+                        <div class="clock-label label-seconds">
+                            Seconds
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--========================== Countdown Timer section End ========================================-->
+
+        <!--============================= button section start  ============================================-->
+        <div class="buttonmainsection">
+            <h1>Animation Buttons</h1>
+            <div class="frame">
+                <button class="custom-btn btn-1">Read More</button>
+                <button class="custom-btn btn-2">Read More</button>
+                <button class="custom-btn btn-3"><span>Read More</span></button>
+                <button class="custom-btn btn-4"><span>Read More</span></button>
+                <button class="custom-btn btn-5"><span>Read More</span></button>
+                <button class="custom-btn btn-6"><span>Read More</span></button>
+                <button class="custom-btn btn-7"><span>Read More</span></button>
+                <button class="custom-btn btn-8"><span>Read More</span></button>
+                <button class="custom-btn btn-9">Read More</button>
+                <button class="custom-btn btn-10">Read More</button>
+                <button class="custom-btn btn-11">Read More<div class="dot"></div></button>
+                <button class="custom-btn btn-12"><span>Click!</span><span>Read More</span></button>
+                <button class="custom-btn btn-13">Read More</button>
+                <button class="custom-btn btn-14">Read More</button>
+                <button class="custom-btn btn-15">Read More</button>
+                <button class="custom-btn btn-16">Read More</button>
+            </div>
+        </div>
+
+        <!--============================= button section ENd  ============================================-->
+
+        <!--==================== slick slider left and right slide section start ===========================-->
+
+        <div class="left-and-right-slider">
+            <div class="carousel">
+                <div class="slide slide-next">
+                    <img src="./images/sliderimg/images (1).jpeg">
+                </div>
+                <div class="slide slide-next">
+                    <img src="./images/sliderimg/img3.jpeg">
+                </div>
+                <div class="slide slide-next">
+                    <img src="./images/sliderimg/img4.jpeg">
+                </div>
+                <div class="slide slide-next">
+                    <img src="./images/sliderimg/images.jpeg">
+                </div>
+                <div class="slide slide-prev">
+                    <img src="./images/sliderimg/img4.jpeg">
+                </div>
+                <div class="slide slide-prev">
+                    <img src="./images/sliderimg/images (1).jpeg">
+                </div>
+                <div class="slide slide-prev">
+                    <img src="./images/sliderimg/img4.jpeg">
+                </div>
+                <div class="slide slide-prev">
+                    <img src="./images/sliderimg/images.jpeg">
+                </div>
+            </div>
+        </div>
+
+        <!--==================== slick slider left and right slide section ENd ===========================-->
+
+
+        <!-------------------------- Supercar-start ------------------------------------->
+
+        <div class="Supercar-main">
+            <div class="container">
+                <div class="supercar-section">
+                    <div class="supercard-content">
+                        <h3>Supercar Fleet</h3>
+                        <p>Choose from our curated selection of premium car brands, all ready to hit the streets.</p>
+                    </div>
+                    <div class="supercar-img-all">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="flip-card-img">
+                                        <img src="./images/supercarImg/car1.svg" alt="" />
+                                        <div class="audidiv">
+                                            <p>Audi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="flip-card-img">
+                                        <img src="./images/supercarImg/audi-gifs-CTxspw.gif" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="flip-card-img">
+                                        <img src="./images/supercarImg/car2.svg" alt="" />
+                                        <div class="audidiv">
+                                            <p>BMW</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flip-card-back">
+                                    <div class="flip-card-img">
+                                        <img src="./images/supercarImg/bmw.gif" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="flip-card-img">
+                                        <img src="./images/supercarImg/car3.svg" alt="" />
+                                        <div class="audidiv">
+                                            <p>Ferrari</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="flip-card-img">
+                                        <img src="./images/supercarImg/Ferrari.gif" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="flip-card-img">
+                                        <img src="./images/supercarImg/car4.svg" alt="" />
+                                        <div class="audidiv">
+                                            <p>Porsche</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="flip-card-img">
+                                        <img src="./images/supercarImg/" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------ Supercar-End ----------------------------------- -->
+
+
+        <!--============================ Jquery accordion section start ================================-->
+
+
+        <div class="main-accordion">
+
+
+            <div class="wd-faq-main-head">How long will a web design project
+                take?</div>
+            <div class="wd-faq-counte">
+                <p>Brand Vision, a top web design agency, is committed to
+                    providing high-quality digital marketing and web design
+                    services in an efficient and effective manner. Here's an
+                    overview of the typical timelines for our various services:
+                </p>
+            </div>
+
+        </div>
+
+
+        <!--============================ Jquery accordion part-2 section start ========================================-->
+
+        <div class="accordion">
+            <h3>Mecânica <i class="r fa fa-gear"></i></h3>
+            <div class="pane">
+                <li><a href="#">Velocidade Média <i class="r fa fa-angle-right"></i></a></li>
+                <li><a href="#">Movimento Uniforme <i class="r fa fa-angle-right"></i></a></li>
+            </div>
+            <h3>Térmica <i class="r 	fa fa-cubes"></i></h3>
+            <div class="pane">
+                <li><a href="#">Termometria <i class="r fa fa-angle-right"></i></a></li>
+                <li><a href="#">Calorimetria <i class="r fa fa-angle-right"></i></a></li>
+            </div>
+            <h3>Óptica Geométrica <i class="r 	fa fa-camera"></i></h3>
+            <div class="pane">
+                <li><a href="#">Princípios fundamentais <i class="r fa fa-angle-right"></i></a></li>
+                <li><a href="#">Espelhos Planos <i class="r fa fa-angle-right"></i></a></li>
+                <li><a href="#">Espelhos Esféricos <i class="r fa fa-angle-right"></i></a></li>
+            </div>
+            <h3>Eletromagnetismo <i class="r fa fa-magnet"></i></h3>
+            <div class="pane">
+                <li><a href="#">Eletrostática <i class="r fa fa-angle-right"></i></a></li>
+                <li><a href="#">Resistores<i class="r fa fa-angle-right"></i></a></li>
+            </div>
+        </div>
+
+
+        <!--============================ Jquery accordion part-2 section end ========================================-->
+
+
+
+
+        <!--============================ Jquery accordion section end ================================-->
+
+
+
+
+
+        <!-- =================================================== All Link start =======================================================
+        =================================================================================================================
+        ====================================================================================================================== -->
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+
+        <!-- ==================================================== All Link End ==============================================
+=================================================================================================================
+====================================================================================================================== -->
+
+        <!--===================================== section scroll with Content scroll Start Jquery ============================-->
+        <script>
+            jQuery(function ($) {
+
+                var html = $('html');
+                var viewport = $(window);
+                var viewportHeight = viewport.height();
+
+                var scrollMenu = $('#section-menu');
+                var timeout = null;
+
+                function menuFreeze() {
+                    if (timeout !== null) {
+                        scrollMenu.removeClass('freeze');
+                        clearTimeout(timeout);
+                    }
+
+                    timeout = setTimeout(function () {
+                        scrollMenu.addClass('freeze');
+                    }, 2000);
+                }
+                scrollMenu.mouseover(menuFreeze);
+
+                /* ==========================================================================
+                     Build the Scroll Menu based on Sections .scroll-item
+                     ========================================================================== */
+
+                var sectionsHeight = {},
+                    viewportheight, i = 0;
+                var scrollItem = $('.scroll-item');
+                var bannerHeight;
+
+                function sectionListen() {
+                    viewportHeight = viewport.height();
+                    bannerHeight = (viewportHeight);
+                    $('.section').addClass('resize');
+                    scrollItem.each(function () {
+                        sectionsHeight[this.title] = $(this).offset().top;
+                    });
+                }
+                sectionListen();
+                viewport.resize(sectionListen);
+                viewport.bind('orientationchange', function () {
+                    sectionListen();
+                });
+
+                var count = 0;
+
+                scrollItem.each(function () {
+                    var anchor = $(this).attr('id');
+                    var title = $(this).attr('title');
+                    count++;
+                    $('#section-menu ul').append('<li><a id="nav_' + title + '" href="#' + anchor + '"><span>' + count + '</span> ' + title + '</a></li>');
+                });
+
+                function menuListen() {
+                    var pos = $(this).scrollTop();
+                    pos = pos + viewportHeight * 0.625;
+                    for (i in sectionsHeight) {
+                        if (sectionsHeight[i] < pos) {
+                            $('#section-menu a').removeClass('active');
+                            $('#section-menu a#nav_' + i).addClass('active');;
+                            var newHash = '#' + $('.scroll-item[title="' + i + '"]').attr('id');
+                            if (history.pushState) {
+                                history.pushState(null, null, newHash);
+                            } else {
+                                location.hash = newHash;
+                            }
+                        } else {
+                            $('#section-menu a#nav_' + i).removeClass('active');
+                            if (pos < viewportHeight - 72) {
+                                history.pushState(null, null, ' ');
+                            }
+                        }
+                    }
+                }
+                scrollMenu.css('margin-top', scrollMenu.height() / 2 * -1);
+
+                /* ==========================================================================
+                     Smooth Scroll for Anchor Links and URL refresh
+                     ========================================================================== */
+
+                scrollMenu.find('a').click(function () {
+                    var href = $.attr(this, 'href');
+                    $('html').animate({
+                        scrollTop: $(href).offset().top
+                    }, 500, function () {
+                        window.location.hash = href;
+                    });
+                    return false;
+                });
+
+                /* ==========================================================================
+                     Fire functions on Scroll Event
+                     ========================================================================== */
+
+                function scrollHandler() {
+                    menuListen();
+                    menuFreeze();
+                }
+                scrollHandler();
+                viewport.on('scroll', function () {
+                    scrollHandler();
+                    //			window.requestAnimationFrame(scrollHandler);
+                });
+            });
+        </script>
+
+        <!--===================================== section scroll with Content scroll End Jquery ============================-->
+
+
+        <!-- ============================ Car Dealership navbar With responsive JQuery start ============================== -->
+
+        <script>
+            let menuToggle = document.querySelector(".toggle");
+            menuToggle.onclick = function () {
+                menuToggle.classList.toggle("active")
+            }
+        </script>
+
+        <!-- ============================ Car Dealership navbar With responsive JQuery End ============================== -->
+
+        <!-- ============================ Eddystone Website Contact Page recaptcha Start ======================================== -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <!-- ============================ Eddystone Website Contact Page recaptcha End ======================================== -->
+
+        <!-- ====================================== Get quote start Jquery ================================================== -->
+        <script>
+            $(document).ready(function () {
+                $(".get-quote a").click(function () {
+                    $(".get-quote").toggleClass("get-open");
+                });
+            });
+        </script>
+        <!-- ====================================== Get quote start Jquery ================================================== -->
+
+        <!-- ====================================== Cyid Testimonials Jquery start ========================================== -->
+        <script>
+            $('.home-page-testimonials .row').slick({
+                dots: false,
+                arrows: true,
+                prevArrow: '.arrow_prev',
+                nextArrow: '.arrow_next',
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        </script>
+
+        <!-- ====================================== Cyid Testimonials Jquery End ========================================== -->
+
+        <!-- ====================================== Counter Section Start Jquery ================================================== -->
+
+        <script>
+            (function ($) {
+                $.fn.countTo = function (options) {
+                    options = options || {};
+
+                    return $(this).each(function () {
+                        var settings = $.extend({}, $.fn.countTo.defaults, {
+                            from: $(this).data('from'),
+                            to: $(this).data('to'),
+                            speed: $(this).data('speed'),
+                            refreshInterval: $(this).data('refresh-interval'),
+                            decimals: $(this).data('decimals')
+                        }, options);
+                        var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                            increment = (settings.to - settings.from) / loops;
+                        var self = this,
+                            $self = $(this),
+                            loopCount = 0,
+                            value = settings.from,
+                            data = $self.data('countTo') || {};
+
+                        $self.data('countTo', data);
+                        if (data.interval) {
+                            clearInterval(data.interval);
+                        }
+                        data.interval = setInterval(updateTimer, settings.refreshInterval);
+                        render(value);
+
+                        function updateTimer() {
+                            value += increment;
+                            loopCount++;
+
+                            render(value);
+
+                            if (typeof (settings.onUpdate) == 'function') {
+                                settings.onUpdate.call(self, value);
+                            }
+
+                            if (loopCount >= loops) {
+                                $self.removeData('countTo');
+                                clearInterval(data.interval);
+                                value = settings.to;
+
+                                if (typeof (settings.onComplete) == 'function') {
+                                    settings.onComplete.call(self, value);
+                                }
+                            }
+                        }
+
+                        function render(value) {
+                            var formattedValue = settings.formatter.call(self, value, settings);
+                            $self.html(formattedValue);
+                        }
+                    });
+                };
+
+                $.fn.countTo.defaults = {
+                    from: 0,
+                    to: 0,
+                    speed: 1000,
+                    refreshInterval: 100,
+                    decimals: 0,
+                    formatter: formatter,
+                    onUpdate: null,
+                    onComplete: null
+                };
+                function formatter(value, settings) {
+                    return value.toFixed(settings.decimals);
+                }
+            }(jQuery));
+
+            jQuery(function ($) {
+                $('.count-number').data('countToOptions', {
+                    formatter: function (value, options) {
+                        return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                    }
+                });
+                $('.timer').each(count);
+                function count(options) {
+                    var $this = $(this);
+                    options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+                    $this.countTo(options);
+                }
+            });
+        </script>
+        <!-- ====================================== Counter Section End Jquery ================================================== -->
+
+
+        <!-- ================================= dotted section slider Jquery start ===============================================  -->
+
+
+        <script>
+            $('.dots-section-main').slick({
+                dots: true,
+                infinite: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        </script>
+
+        <!-- ================================= dotted section slider Jquery End ===============================================  -->
+
+        <!-- ========================== progress-line JS Start ==========================================================  -->
+
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            } 
+        </script>
+
+        <!-- ========================== progress-line JS End ==========================================================  -->
+
+        <!--============================== typeWriter section start ===================================================-->
+        <script>
+            var typeWriterElement = document.getElementById('typewriter');
+            var textArray = ["Hey, I'm vimal patel."];
+            function delWriter(text, i, cb) {
+                if (i >= 0) {
+                    typeWriterElement.innerHTML = text.substring(0, i--);
+                    var rndBack = 10 + Math.random() * 100;
+                    setTimeout(function () {
+                        delWriter(text, i, cb);
+                    }, rndBack);
+                } else if (typeof cb == 'function') {
+                    setTimeout(cb, 1000);
+                }
+            };
+            function typeWriter(text, i, cb) {
+                if (i < text.length + 1) {
+                    typeWriterElement.innerHTML = text.substring(0, i++);
+                    var rndTyping = 250 - Math.random() * 100;
+                    setTimeout(function () {
+                        typeWriter(text, i++, cb)
+                    }, rndTyping);
+                } else if (i === text.length + 1) {
+                    setTimeout(function () {
+                        delWriter(text, i, cb)
+                    }, 1000);
+                }
+            };
+            function StartWriter(i) {
+                if (typeof textArray[i] == "undefined") {
+                    setTimeout(function () {
+                        StartWriter(0)
+                    }, 1000);
+                } else if (i < textArray[i].length + 1) {
+                    typeWriter(textArray[i], 0, function () {
+                        StartWriter(i + 1);
+                    });
+                }
+            };
+            setTimeout(function () {
+                StartWriter(0);
+            }, 1000);
+        </script>
+
+        <!--============================== typeWriter section End ===================================================-->
+
+        <!--============================== PosswordCheck section start ===================================================-->
+
+        <script>
+
+            let eye = document.getElementById("eye")
+            let password = document.getElementById("password")
+
+            eye.onclick = function () {
+
+
+                if (password.type == "password") {
+                    password.type = "text";
+                    eye.src = "./Password-Checker/Password-Checker/eye2.png";
+                }
+                else {
+                    password.type = "password";
+                    eye.src = "./Password-Checker/Password-Checker/eye1.png";
+
+                }
+            }
+        </script>
+
+        <!--============================== PosswordCheck section End ===================================================-->
+
+        <!--======================================== FAQ section start ==================================================-->
+        <script>
+            $(document).ready(function () {
+                $('.tab-a').click(function () {
+                    $(".tb-img").removeClass('tab-active');
+                    $(".tb-img[data-id='" + $(this).attr('data-id') + "']").addClass("tab-active");
+                    $(".tab-a").removeClass('active-a');
+                    $(this).parent().find(".tab-a").addClass('active-a');
+                });
+            });
+        </script>
+        <!--======================================== FAQ section End ==================================================-->
+
+        <!-- ======================================== Responsive Tab panel section start ================================= -->
+
+        <script>
+            $(document).on('click', '.nav-item', function () {
+                $('.nav-item').removeClass('active');
+                $('.nav-tabs').toggleClass('expanded');
+                $(this).addClass('active');
+                var tab_id = $(this).attr('data-tab');
+                $('.nav-item').removeClass('current');
+                $(this).addClass('current');
+                $('#' + tab_id).addClass('current');
+            });
+        </script>
+
+        <!-- ======================================== Responsive Tab panel section End ================================= -->
+
+        <!-- =================================== cursor pointer start ============================================== -->
+        <script>
+            document.addEventListener('mousemove', (e) => {
+                const circle = document.querySelector('.circle');
+                circle.style.left = `${e.clientX}px`;
+                circle.style.top = `${e.clientY}px`;
+            });
+        </script>
+        <!-- =================================== cursor pointer End ============================================== -->
+
+        <!--======================= hover ringtone Jquery Add section start  ====================================-->
+        <script>
+            $(document).ready(function () {
+                $(".off").hide();
+                $("#play").click(function () {
+                    if ($(this).hasClass("active")) {
+                        $(".off").hide();
+                        $(".on").fadeIn();
+                        $("#powerOn")[0].pause();
+                        $("#powerOff")[0].play();
+                        $(this).toggleClass("active");
+                        $(
+                            ".machine-art-container, .machine-lights-container, .boon h1, .bane h1"
+                        ).toggleClass("active");
+                    } else {
+                        $(".on").hide();
+                        $(".off").fadeIn();
+                        $("#powerOn")[0].play();
+                        $("#powerOff")[0].pause();
+                        $("#powerOff")[0].currentTime = 0;
+                        $(this).toggleClass("active");
+                        $(
+                            ".machine-art-container, .machine-lights-container, .boon h1, .bane h1"
+                        ).toggleClass("active");
+                    }
+                });
+                $(".menu a").mouseover(function () {
+                    $("#hover")[0].play();
+                });
+                $(".menu a").mouseout(function () {
+                    $("#hover")[0].pause();
+                    $("#hover")[0].currentTime = 0;
+                });
+            });
+        </script>
+        <!--======================= hover ringtone Jquery Add section End  ====================================-->
+
+
+        <!--========================== Countdown Timer section start ========================================-->
+        <script>
+            window.onload = function () {
+                const controller = new AbortController();
+                const countDownDate = new Date("September 30, 2024 12:38:00").getTime();
+                const clockDaysElement = document.querySelector(".clock-days");
+                const clockHoursElement = document.querySelector(".clock-hours");
+                const clockMinutesElement = document.querySelector(".clock-minutes");
+                const clockSecondsElement = document.querySelector(".clock-seconds");
+                animationInterval(1000, controller.signal, (time) => {
+                    let now = new Date().getTime();
+                    let distance = countDownDate - now;
+                    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    let hours = Math.floor(
+                        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                    );
+                    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    clockDaysElement.textContent = days;
+                    clockHoursElement.textContent = hours;
+                    clockMinutesElement.textContent = minutes;
+                    clockSecondsElement.textContent = seconds;
+                    if (distance < 0) {
+                        controller.abort();
+                        document.querySelector(".clock-container").innerHTML = "EXPIRED";
+                    }
+                });
+            };
+
+            function animationInterval(ms, signal, callback) {
+                const start = document.timeline
+                    ? document.timeline.currentTime
+                    : performance.now();
+
+                function frame(time) {
+                    if (signal.aborted) return;
+                    callback(time);
+                    scheduleFrame(time);
+                }
+
+                function scheduleFrame(time) {
+                    const elapsed = time - start;
+                    const roundedElapsed = Math.round(elapsed / ms) * ms;
+                    const targetNext = start + roundedElapsed + ms;
+                    const delay = targetNext - performance.now();
+                    setTimeout(() => requestAnimationFrame(frame), delay);
+                }
+
+                scheduleFrame(start);
+            }
+        </script>
+        <!--========================== Countdown Timer section End ========================================-->
+
+        <!--==================== slick slider left and right slide section start ===========================-->
+        <script>
+
+            $(function () {
+                $('.carousel')
+                    .on('init', function (event, slick) {
+                        slick.$slides.each(function (slide) {
+                            $(this).css('z-index', slick.$slides.length - slide);
+                        });
+                    })
+                    .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+                        const $slides = $(slick.$slides);
+                        if (nextSlide - currentSlide !== 0) {
+                            $slides.add('.slick-cloned').removeClass('slide-prev slide-next').css('z-index', 0);
+                            $slides.eq(nextSlide).css('z-index', 100);
+                            let $nextSlides = $slides.eq(nextSlide).nextAll().slice(0, Math.round(slick.options.slidesToShow / 2));
+
+                            $nextSlides.each(function (slide) {
+                                $(this).css('z-index', $nextSlides.length - slide);
+                            });
+                            let slidesToMove = Math.abs(nextSlide - currentSlide);
+                            const loop = slidesToMove > Math.round(slick.options.slidesToShow / 2);
+
+                            if (!loop) {
+                                $slides.add('.slick-cloned').removeClass('slide-prev slide-next').css('z-index', 0);
+                                $slides.eq(nextSlide)
+                                    .nextAll().addClass('slide-next').end()
+                                    .prevAll().addClass('slide-prev');
+                            } else {
+                                slidesToMove = slick.slideCount - slidesToMove;
+                                let movingLeft = nextSlide - currentSlide > 0;
+                                let movingRight = nextSlide - currentSlide < 0;
+
+                                if (movingLeft) {
+                                    $slides.eq(nextSlide)
+                                        .nextAll().add($slides.slice(0, 3)).addClass('slide-next').end()
+                                        .prevAll().not($slides.slice(0, 3)).addClass('slide-prev');
+                                    let $clones = $('.slick-active.slick-cloned.slide-prev');
+                                    $clones.slice(-slidesToMove).removeClass('slide-next slide-prev');
+                                    if (slidesToMove > 1 && currentSlide == 0) {
+                                        $clones.slice(-slidesToMove + 1).addClass('slide-next');
+                                    }
+                                } else if (movingRight) {
+                                    $slides.eq(nextSlide)
+                                        .nextAll().not($slides.slice(-3)).addClass('slide-next').end()
+                                        .prevAll().add($slides.slice(-3)).addClass('slide-prev');
+                                    let $clones = $('.slick-active.slick-cloned.slide-next');
+                                    $clones.slice(0, slidesToMove).removeClass('slide-next slide-prev');
+                                    if (slidesToMove > 1 && currentSlide + 1 == slick.slideCount) {
+                                        $clones.slice(0, slidesToMove - 1).addClass('slide-prev');
+                                    }
+                                }
+                            }
+                        }
+                    })
+                    .on('afterChange', function (event, slick, currentSlide) {
+                        slick.$slides.eq(currentSlide).css('z-index', 101);
+                    })
+                    .slick({
+                        slidesToShow: 5,
+                        centerMode: true,
+                        // focusOnSelect: true,
+                        // arrows: false,
+                        // centerPadding: '400px',
+                    });
+            });
+        </script>
+        <!--==================== slick slider left and right slide section End ===========================-->
+
+        <!-- /*======================== scrolled navbar color change section start =======================*/ -->
+
+        <script>
+            jQuery(window).scroll(function () {
+                var scroll = jQuery(window).scrollTop();
+                if (scroll >= 100) {
+                    jQuery(".navbar").addClass("navbar-scrolled");
+                } else {
+                    jQuery(".navbar").removeClass("navbar-scrolled");
+                }
+            });
+        </script>
+
+        <!-- /*======================== scrolled navbar color change section End =======================*/ -->
+
+        <!--============================ Jquery accordion section start ========================================-->
+        <script>
+
+            $(document).ready(function () {
+                $('.wd-faq-main-head').click(function () {
+                    if (!$('.wd-faq-main-head').hasClass('wdfmh-active'))
+                        $(this).removeClass('wdfmh-active');
+                    $(this).toggleClass('wdfmh-active');
+                    $(this).next('.wd-faq-counte').slideToggle().siblings('.wd-faq-counte:visible').slideToggle();
+                });
+            });
+
+        </script>
+
+        <!--============================ Jquery accordion part-2 section start ========================================-->
+
+        <script>
+            $(function () {
+
+                $(".accordion div").show();
+                setTimeout("$('.accordion div').slideToggle('slow');", 500);
+                $(".accordion h3").click(function () {
+                    $(this).next(".pane").slideToggle("slow").siblings(".pane:visible").slideUp("slow");
+                    $(this).toggleClass("current");
+                    $(this).siblings("h3").removeClass("current");
+                });
+            });
+        </script>
+        <!--============================ Jquery accordion part-2 section end ========================================-->
+
+
+        <!--============================ Jquery accordion section End ========================================-->
+
+
+
+</body>
+
+</html>
